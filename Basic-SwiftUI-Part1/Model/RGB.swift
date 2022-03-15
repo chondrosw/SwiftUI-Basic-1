@@ -29,7 +29,7 @@ struct RGB{
     
     func intString()->String{
         return "R:\(Int(red * 255.0))"
-        + "G: \(Int(green * 255.0))"
-        + "B: \(Int(blue * 255.0))"
+        + " G:\(Int(green * 255.0))"
+        + " B:\(Int(blue * 255.0))"
     }
 }
