@@ -13,7 +13,7 @@ struct Basic_SwiftUI_Part1App: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(guess: RGB())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

@@ -16,6 +16,10 @@
 		4D49A67927DFCE3200E36FDC /* Basic_SwiftUI_Part1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49A67827DFCE3200E36FDC /* Basic_SwiftUI_Part1Tests.swift */; };
 		4D49A68327DFCE3200E36FDC /* Basic_SwiftUI_Part1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49A68227DFCE3200E36FDC /* Basic_SwiftUI_Part1UITests.swift */; };
 		4D49A68527DFCE3200E36FDC /* Basic_SwiftUI_Part1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49A68427DFCE3200E36FDC /* Basic_SwiftUI_Part1UITestsLaunchTests.swift */; };
+		4D49A69527E04EB400E36FDC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49A69427E04EB400E36FDC /* Color.swift */; };
+		4D49A69727E04F0500E36FDC /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49A69627E04F0500E36FDC /* RGB.swift */; };
+		4D49A69927E0509500E36FDC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49A69827E0509500E36FDC /* Game.swift */; };
+		4D49A69E27E052D900E36FDC /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49A69D27E052D900E36FDC /* ColorSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		4D49A67E27DFCE3200E36FDC /* Basic-SwiftUI-Part1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basic-SwiftUI-Part1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D49A68227DFCE3200E36FDC /* Basic_SwiftUI_Part1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic_SwiftUI_Part1UITests.swift; sourceTree = "<group>"; };
 		4D49A68427DFCE3200E36FDC /* Basic_SwiftUI_Part1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic_SwiftUI_Part1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4D49A69427E04EB400E36FDC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4D49A69627E04F0500E36FDC /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
+		4D49A69827E0509500E36FDC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		4D49A69D27E052D900E36FDC /* ColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,10 @@
 		4D49A66127DFCE3000E36FDC /* Basic-SwiftUI-Part1 */ = {
 			isa = PBXGroup;
 			children = (
+				4D49A69A27E052B700E36FDC /* View */,
+				4D49A69227E04EA100E36FDC /* Util */,
+				4D49A69127E04E9700E36FDC /* Model */,
 				4D49A66227DFCE3000E36FDC /* Basic_SwiftUI_Part1App.swift */,
-				4D49A66427DFCE3000E36FDC /* ContentView.swift */,
 				4D49A66627DFCE3100E36FDC /* Assets.xcassets */,
 				4D49A66B27DFCE3100E36FDC /* Persistence.swift */,
 				4D49A66D27DFCE3100E36FDC /* Basic_SwiftUI_Part1.xcdatamodeld */,
@@ -131,6 +141,56 @@
 				4D49A68427DFCE3200E36FDC /* Basic_SwiftUI_Part1UITestsLaunchTests.swift */,
 			);
 			path = "Basic-SwiftUI-Part1UITests";
+			sourceTree = "<group>";
+		};
+		4D49A69127E04E9700E36FDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D49A69627E04F0500E36FDC /* RGB.swift */,
+				4D49A69827E0509500E36FDC /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D49A69227E04EA100E36FDC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4D49A69327E04EA900E36FDC /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4D49A69327E04EA900E36FDC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D49A69427E04EB400E36FDC /* Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4D49A69A27E052B700E36FDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D49A69C27E052C300E36FDC /* Page */,
+				4D49A69B27E052BD00E36FDC /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D49A69B27E052BD00E36FDC /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				4D49A69D27E052D900E36FDC /* ColorSlider.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		4D49A69C27E052C300E36FDC /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				4D49A66427DFCE3000E36FDC /* ContentView.swift */,
+			);
+			path = Page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +325,11 @@
 			files = (
 				4D49A66C27DFCE3100E36FDC /* Persistence.swift in Sources */,
 				4D49A66527DFCE3000E36FDC /* ContentView.swift in Sources */,
+				4D49A69927E0509500E36FDC /* Game.swift in Sources */,
 				4D49A66F27DFCE3100E36FDC /* Basic_SwiftUI_Part1.xcdatamodeld in Sources */,
+				4D49A69727E04F0500E36FDC /* RGB.swift in Sources */,
+				4D49A69527E04EB400E36FDC /* Color.swift in Sources */,
+				4D49A69E27E052D900E36FDC /* ColorSlider.swift in Sources */,
 				4D49A66327DFCE3000E36FDC /* Basic_SwiftUI_Part1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
